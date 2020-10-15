@@ -1,7 +1,6 @@
 package OOP;
 
 interface ICar {
-
     void go();
 }
 
@@ -16,6 +15,8 @@ abstract class ACar implements ICar {
     void openDoor() {
 
     }
+
+    abstract void openTrunk();
 }
 
 class FlyCar extends ACar implements IPlane {
@@ -33,6 +34,11 @@ class FlyCar extends ACar implements IPlane {
     @Override
     public void fly() {
         System.out.println(this.color + " " + this.brand + " are fly.");
+    }
+
+    @Override
+    void openTrunk() {
+        System.out.println(this.color + " " + this.brand + " trunk opened.");
     }
 
 }
