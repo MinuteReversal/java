@@ -1,6 +1,6 @@
 {
   "java.home": "C:\\Program Files\\RedHat\\java-11-openjdk-11.0.8-2",
-  "java.server.launchMode": "LightWeight",
+  "java.server.launchMode": "Standard",
   "files.exclude": {
     "**/.classpath": true,
     "**/.project": true,

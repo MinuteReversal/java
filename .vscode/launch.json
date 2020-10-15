@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ABC",
+            "request": "launch",
+            "mainClass": "Methods.ABC",
+            "projectName": "java_5aa62aab"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DemoIF",
             "request": "launch",
             "mainClass": "ControlFlow.DemoIF",
