@@ -1,4 +1,6 @@
-package OOA;
+package AOP;
+
+import java.lang.annotation.Annotation;
 
 /**
  * DemoA
@@ -14,9 +16,12 @@ class DemoA {
 }
 
 public class DemoAnnotation {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
-        var annotations = DemoA.class.getAnnotations();
-        for (var annotation : annotations) {
+        Annotation[] annotations = DemoA.class.getAnnotations();
+        for (Annotation annotation : annotations) {
             if (annotation instanceof CustomAnnotation) {
                 CustomAnnotation customAnnotation = (CustomAnnotation) annotation;
                 System.out.println("name:" + customAnnotation.name());
