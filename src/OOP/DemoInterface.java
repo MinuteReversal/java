@@ -2,6 +2,7 @@ package OOP;
 
 interface ICar {
     void go();
+    
 }
 
 interface IPlane {
